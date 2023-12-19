@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    
+
+    <style>
+      .formbox {
+        display: flex;
+        justify-content: center;
+      }
+      #head-centre {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+      }
+      #field{
+        border: 1px solid black;
+        
+      }
+
+      .manoju{
+        display: flex;
+        justify-content:space-around;
+        /* align-items: center; */
+      }
+
+      .vinni{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+    </style>
+  </head>
+  <!-- class="p-3 mb-2 bg-primary-subtle text-emphasis-primary  " -->
+  <body style="background-color:rgba(230, 230, 250, 0.632);">
+    <div class="container">
+      <div class="form-box">
+        <h1 id="head-centre">Registration Form</h1>
+        <div class="formbox md-3 p-3">
+          <fieldset class="shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="field" style="width: 500px; height: 350px">
+            <form id="user-form">
+              <!-- name -->
+              <label for="name">Name</label>
+              <input required type="text" name="name" id="name" />
+              <br />
+              <br />
+
+              <!-- email -->
+              <label for="email" class="form-label">Email</label>
+              <input required type="email" name="email" id="email" />
+              <br />
+              <br />
+
+              <!-- password -->
+              <label for="password">Password</label>
+              <input required type="password" name="password" id="password" />
+              <br />
+              <br />
+
+              <!-- Date of Birth -->
+              <label for="dob">Date of Birth</label>
+              <input required type="date" name="dob" id="dob" />
+              <br />
+              <br />
+
+              <!-- check box to accept the conditions and polices -->
+              <input type="checkbox" name="terms" id="terms" />
+              <label for="terms">Accept Terms and conditions</label>
+              <br />
+              <br />
+
+              <button type="submit">Submit</button>
+              <br />
+            </form>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- creating table to store data locally -->
+
+    <div class="vinni container" >
+        <h2>Entries</h2>
+        <div class="manoju" id="user-entries"></div>
+    </div>
+
+
+     <!-- Table to display
+  <table
+  id="table"
+  class="w-2/3 mx-auto my-8"></table> -->
+
+
+    <!-- <script src="index.js"></script> -->
+    <script src="script.js"></script>
+    <!-- <script src="wd.js"></script> -->
+
+  </body>
+</html>
+
+
